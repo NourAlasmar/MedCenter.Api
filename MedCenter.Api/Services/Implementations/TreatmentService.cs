@@ -34,6 +34,7 @@ namespace MedCenter.Api.Services.Implementations
 
             await _uow.Treatments.AddAsync(t, ct);
             await _uow.SaveAsync(ct);
+            //
             // 2) تحديث الحالة البصرية للسن/المنطقة حسب المعطيات
             if (!string.IsNullOrWhiteSpace(dto.ToothCode))
                 await UpsertToothVisualAsync(dto, ct);

@@ -1,5 +1,9 @@
 ﻿namespace MedCenter.Api.Models
 {
+
+    /// <summary>
+    /// /// حالة منطقة الوجه/الجلد على مخطط المريض
+    /// </summary>
     // حالة منطقة الوجه/الجلد على مخطط المريض
     public enum RegionStatus : byte
     {
